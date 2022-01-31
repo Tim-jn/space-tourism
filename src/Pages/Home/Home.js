@@ -4,7 +4,7 @@ import './home.css'
 
 export default function Home() {
   return (
-    <>
+    <main>
       <Header />
       <section className="container">
         <div className="textContent">
@@ -21,6 +21,6 @@ export default function Home() {
           EXPLORE
         </Link>
       </section>
-    </>
+    </main>
   )
 }
