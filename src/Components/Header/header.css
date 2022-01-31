@@ -50,3 +50,25 @@
   margin-right: 10px;
   font-weight: bold;
 }
+
+@media screen and (max-width: 1024px) {
+  .headerContent {
+    padding-top: 0;
+  }
+
+  .navHeader::before {
+    content: none;
+  }
+
+  .number {
+    display: none;
+  }
+
+  .navLink {
+    font-size: 14px;
+  }
+
+  .logo {
+    margin-left: 35px;
+  }
+}
