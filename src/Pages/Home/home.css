@@ -1,20 +1,20 @@
+html,
 body {
-  background: url(background-home-desktop.jpg) no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  cursor: default;
 }
 
-#root {
-  height: 100vh;
+body {
+  background: url(background-home-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left top;
+  cursor: default;
 }
 
 .container {
   margin: 10% 14%;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
@@ -83,17 +83,16 @@ body {
 
 @media screen and (max-width: 1250px) {
   .container {
-    margin: 100px 9%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    margin: auto;
   }
 }
 
 @media screen and (max-width: 1024px) {
   body {
-    background: url(background-home-tablet.jpg) no-repeat;
+    background: url(background-home-tablet.jpg);
     background-size: cover;
-    background-position: center;
+    background-repeat: no-repeat;
+    background-position: left top;
   }
 
   .container {
@@ -102,6 +101,7 @@ body {
 
   .textContent {
     text-align: center;
+    margin-top: 100px;
   }
 
   .upperText {
@@ -113,6 +113,7 @@ body {
   }
 
   .exploreButton {
-    margin-top: 140px;
+    margin-top: 100px;
+    margin-bottom: 100px;
   }
 }
