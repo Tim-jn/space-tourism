@@ -128,8 +128,8 @@ main {
   .textContent {
     text-align: center;
     margin-top: 0px;
-    width: 327px;
-    height: 276px;
+    width: 100%;
+    height: 100%;
   }
 
   .upperText {
