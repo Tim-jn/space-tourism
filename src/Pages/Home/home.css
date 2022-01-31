@@ -3,7 +3,7 @@ body {
   height: 100vh;
 }
 
-main {
+.homeMain {
   background: url(background-home-desktop.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +86,7 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-  main {
+  .homeMain {
     background: url(background-home-tablet.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +117,7 @@ main {
 }
 
 @media screen and (max-width: 600px) {
-  main {
+  .homeMain {
     background: url(background-home-mobile.jpg);
     background-size: cover;
     background-repeat: no-repeat;

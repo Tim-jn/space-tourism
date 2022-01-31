@@ -30,8 +30,6 @@ export default function Header() {
     setToggle(!toggle)
   }
 
-  console.log(toggle)
-
   return (
     <header>
       <div className="headerContent">

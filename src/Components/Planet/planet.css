@@ -1,0 +1,46 @@
+.planetContent {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 30px 0 50px 0;
+  align-items: center;
+}
+
+.planetImage {
+  width: 445px;
+  height: 445px;
+}
+
+.planetName {
+  font-size: 100px;
+  font-family: 'Bellefair', sans-serif;
+  font-weight: 400;
+}
+
+.planetDescription {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+.belowText {
+  margin-top: 50px;
+  padding-top: 20px;
+  border-top: 2px solid rgba(61, 61, 61, 0.623);
+  display: flex;
+  justify-content: left;
+  gap: 25%;
+}
+
+.planetDistance,
+.travelTime {
+  font-family: 'Bellefair', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0;
+}
+
+.distance,
+.time {
+  font-size: 14px;
+  letter-spacing: 2.36px;
+}
