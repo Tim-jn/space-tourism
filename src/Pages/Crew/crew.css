@@ -4,3 +4,39 @@
   background-size: cover;
   min-height: 100vh;
 }
+
+.slides {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.emptyContent {
+  max-width: 530px;
+  width: 40%;
+}
+
+.listSlides {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  width: 490px;
+  margin-left: 50px;
+}
+
+.crewMember,
+.crewMember-active {
+  cursor: pointer;
+}
+
+.crewMember::marker,
+.crewMember-active::marker {
+  font-size: 40px;
+}
+
+.crewMember::marker {
+  color: rgba(255, 255, 255, 0.18);
+}
+
+.crewMember-active::marker {
+  color: #fff;
+}
