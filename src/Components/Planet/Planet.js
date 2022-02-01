@@ -7,7 +7,7 @@ export default function Planet(props) {
       <div className="textContent">
         <h1 className="planetName">{props.planetName}</h1>
         <p className="planetDescription">{props.planetDesc}</p>
-        <div className="belowText">
+        <div className="belowTextPlanet">
           <div className="planetDistance">
             <p className="distance">AVG. DISTANCE</p>
             {props.planetDist}
