@@ -22,7 +22,7 @@ export default function Header() {
     return matches
   }
 
-  const isDesktop = useMediaQuery('(min-width: 600px)')
+  const isDesktop = useMediaQuery('(min-width: 601px)')
 
   const [toggle, setToggle] = useState(false)
 

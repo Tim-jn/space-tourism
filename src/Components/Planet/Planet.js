@@ -4,7 +4,7 @@ export default function Planet(props) {
   return (
     <section className="planetContent">
       <img src={props.planetImage} alt="Planet" className="planetImage" />
-      <div className="textContent">
+      <div className="textContentPlanet">
         <h1 className="planetName">{props.planetName}</h1>
         <p className="planetDescription">{props.planetDesc}</p>
         <div className="belowTextPlanet">

@@ -10,7 +10,7 @@
   font-size: 28px;
   letter-spacing: 4.72px;
   font-weight: 400;
-  margin: 75px 0 30px 180px;
+  margin: 75px 0 50px 180px;
 }
 
 .destinationNumber {
@@ -58,4 +58,43 @@
   cursor: pointer;
   padding-bottom: 10px;
   border-bottom: 3px solid #fff;
+}
+
+@media screen and (max-width: 1025px) {
+  .destinationTitle {
+    margin: 30px 0 30px 40px;
+    font-size: 20px;
+  }
+
+  .planetList {
+    justify-content: center;
+  }
+
+  .planet {
+    margin: 0 17.5px;
+  }
+
+  .planet-active {
+    margin: 0 17.5px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .destinationTitle {
+    text-align: center;
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .planetList {
+    justify-content: center;
+  }
+
+  .planet {
+    font-size: 14px;
+  }
+
+  .planet-active {
+    font-size: 14px;
+  }
 }
