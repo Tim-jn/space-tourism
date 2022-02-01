@@ -28,6 +28,10 @@
   cursor: pointer;
 }
 
+.crewMember:hover::marker {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 .crewMember::marker,
 .crewMember-active::marker {
   font-size: 40px;
