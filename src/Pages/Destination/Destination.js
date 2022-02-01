@@ -44,8 +44,8 @@ export default function Destination() {
   return (
     <main className="destinationMain">
       <Header />
-      <h2 className="destinationTitle">
-        <span className="destinationNumber">01</span>PICK YOUR DESTINATION
+      <h2 className="sharedTitle">
+        <span className="sharedNumber">01</span>PICK YOUR DESTINATION
       </h2>
       <div className="destinationContent">
         <div className="planetListContent">

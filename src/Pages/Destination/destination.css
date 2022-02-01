@@ -5,7 +5,7 @@
   min-height: 100vh;
 }
 
-.destinationTitle {
+.sharedTitle {
   color: #fff;
   font-size: 28px;
   letter-spacing: 4.72px;
@@ -13,7 +13,7 @@
   margin: 75px 0 50px 180px;
 }
 
-.destinationNumber {
+.sharedNumber {
   opacity: 0.25;
   font-weight: bold;
   margin-right: 20px;
@@ -61,7 +61,7 @@
 }
 
 @media screen and (max-width: 1025px) {
-  .destinationTitle {
+  .sharedTitle {
     margin: 30px 0 30px 40px;
     font-size: 20px;
   }
@@ -80,7 +80,7 @@
 }
 
 @media screen and (max-width: 600px) {
-  .destinationTitle {
+  .sharedTitle {
     text-align: center;
     margin-left: 0;
     font-size: 16px;

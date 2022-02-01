@@ -1,0 +1,6 @@
+.crewMain {
+  background: url(background-crew-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+}
