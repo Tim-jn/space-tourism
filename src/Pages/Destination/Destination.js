@@ -51,16 +51,30 @@ export default function Destination() {
         <div className="planetListContent">
           <div className="emptyContent"></div>
           <ul className="planetList">
-            <li onClick={moonDisplayOnly} className="planet moon">
+            <li
+              onClick={moonDisplayOnly}
+              className={moonDisplay ? 'planet-active moon' : 'planet moon'}
+            >
               MOON
             </li>
-            <li onClick={marsDisplayOnly} className="planet mars">
+            <li
+              onClick={marsDisplayOnly}
+              className={marsDisplay ? 'planet-active mars' : 'planet mars'}
+            >
               MARS
             </li>
-            <li onClick={europaDisplayOnly} className="planet europa">
+            <li
+              onClick={europaDisplayOnly}
+              className={
+                europaDisplay ? 'planet-active europa' : 'planet europa'
+              }
+            >
               EUROPA
             </li>
-            <li onClick={titanDisplayOnly} className="planet titan">
+            <li
+              onClick={titanDisplayOnly}
+              className={titanDisplay ? 'planet-active titan' : 'planet titan'}
+            >
               TITAN
             </li>
           </ul>

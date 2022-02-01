@@ -47,5 +47,15 @@
 }
 
 .planet:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.384);
+}
+
+.planet-active {
+  margin-right: 35px;
+  list-style-type: none;
+  letter-spacing: 2.7px;
+  font-weight: 300;
+  cursor: pointer;
+  padding-bottom: 10px;
   border-bottom: 3px solid #fff;
 }
