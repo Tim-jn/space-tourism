@@ -1,5 +1,5 @@
 import Header from '../../Components/Header/Header'
-import CrewContent from '../../Components/Crew/CrewContent'
+import CrewContent from '../../Components/CrewContent/CrewContent'
 import datas from '../../Data/data.json'
 import douglas from './image-douglas-hurley.png'
 import anousheh from './image-anousheh-ansari.png'
@@ -50,7 +50,7 @@ export default function Crew() {
     <main className="crewMain">
       <Header />
       <h2 className="sharedTitle">
-        <span className="sharedNumber">01</span>MEET YOUR CREW
+        <span className="sharedNumber">02</span>MEET YOUR CREW
       </h2>
       <div className="slides">
         <ul className="listSlides">
