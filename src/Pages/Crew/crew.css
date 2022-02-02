@@ -44,3 +44,18 @@
 .crewMember-active::marker {
   color: #fff;
 }
+
+@media screen and (max-width: 1025px) {
+
+  .listSlides {
+    justify-content: center;
+    margin-left: 35px;
+    gap: 30px;
+  }
+
+  .crewMember::marker,
+  .crewMember-active::marker {
+    font-size: 25px;
+
+  }
+}
