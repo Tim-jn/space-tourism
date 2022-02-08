@@ -44,3 +44,51 @@
   background: #fff;
   color: #000;
 }
+
+@media screen and (max-width: 1025px) {
+  .techSection {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 0;
+    padding-bottom: 50px;
+  }
+
+  .techSlides {
+    position: absolute;
+    top: 600px;
+    left: 50%;
+    transform: translate(-50%, -66%);
+  }
+
+  .techSlides ul {
+    display: flex;
+  }
+
+  .techSlide,
+  .techSlide-active {
+    margin: 0 15px;
+    margin-bottom: 0;
+    height: 60px;
+    width: 60px;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .techSlides {
+    position: absolute;
+    top: 370px;
+    left: 50%;
+    transform: translate(-50%, -66%);
+  }
+
+  .techSlide,
+  .techSlide-active {
+    margin: 0 10px;
+    margin-bottom: 0;
+    height: 40px;
+    width: 40px;
+    font-size: 16px;
+  }
+}

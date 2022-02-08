@@ -3,12 +3,29 @@ import TechnologyContent from '../../Components/TechnologyContent/TechnologyCont
 import './technology.css'
 import datas from '../../Data/data.json'
 import launch from './image-launch-vehicle-portrait.jpg'
-import { useState } from 'react'
+import capsule from './image-space-capsule-portrait.jpg'
+import spacePort from './image-spaceport-portrait.jpg'
+import launchRes from './image-launch-vehicle-landscape.jpg'
+import capsuleRes from './image-space-capsule-landscape.jpg'
+import spacePortRes from './image-spaceport-landscape.jpg'
+import { useState, useEffect } from 'react'
 
 export default function Technology() {
   const techData = datas.technology.map((data) => {
     return data
   })
+
+  const [matches, setMatches] = useState(false)
+
+  useEffect(() => {
+    const media = window.matchMedia('(max-width: 1025px)')
+    if (media.matches !== matches) {
+      setMatches(media.matches)
+    }
+    const listener = () => setMatches(media.matches)
+    window.addEventListener('resize', listener)
+    return () => window.removeEventListener('resize', listener)
+  }, [matches])
 
   const [tech1, setTech1] = useState(true)
   const [tech2, setTech2] = useState(false)
@@ -65,19 +82,19 @@ export default function Technology() {
           <TechnologyContent
             techTitle={techData[0].name}
             techDesc={techData[0].description}
-            image={launch}
+            image={!matches ? launch : launchRes}
           />
         ) : tech2 ? (
           <TechnologyContent
             techTitle={techData[1].name}
             techDesc={techData[1].description}
-            image={launch}
+            image={!matches ? spacePort : spacePortRes}
           />
         ) : tech3 ? (
           <TechnologyContent
             techTitle={techData[2].name}
             techDesc={techData[2].description}
-            image={launch}
+            image={!matches ? capsule : capsuleRes}
           />
         ) : (
           ''
